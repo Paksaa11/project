@@ -1,0 +1,595 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fbfaf7;
+    color: #171715;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.shipping-bar {
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffe66b;
+    color: #77756f;
+}
+
+.shipping-bar p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.header {
+    height: 58px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fbfaf7;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.main-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.main-links a {
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-links a:hover {
+    text-decoration: underline;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.bag {
+    width: 30px;
+    height: 36px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+}
+
+.bag-handle {
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    left: 7px;
+    border: 1.5px solid #171715;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.bag-shape {
+    width: 28px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background: #171715;
+    color: white;
+    font-size: 13px;
+}
+
+.account {
+    width: 29px;
+    height: 29px;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    background: #171715;
+}
+
+.account-head {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: white;
+}
+
+.account-body {
+    width: 17px;
+    height: 8px;
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+    border-radius: 10px 10px 6px 6px;
+    background: white;
+}
+
+.hero {
+    min-height: 700px;
+    padding: 60px 6%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/Camping Store_Gemini 3 (Nano Banana Pro)_2026-07-24_11-40-49_edited_edited_edited.avif");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.hero-copy {
+    max-width: 930px;
+}
+
+.hero h1 {
+    margin: 0 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.hero p {
+    max-width: 900px;
+    margin: 0 0 38px;
+    font-size: 30px;
+}
+
+.button {
+    min-width: 250px;
+    padding: 16px 30px;
+    display: inline-block;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.white-button {
+    background: white;
+    color: #171715;
+}
+
+.black-button {
+    background: #171715;
+    color: white;
+}
+
+.button:hover,
+.plain-link:hover,
+.footer-part a:hover,
+.section-heading a:hover {
+    text-decoration: underline;
+}
+
+.categories {
+    padding: 85px 5%;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 14px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.section-heading a {
+    font-size: 18px;
+}
+
+.category-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.category {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.category h3 {
+    margin: 20px 0 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.category p {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.products {
+    padding: 50px 5% 100px;
+    text-align: center;
+}
+
+.product-list {
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    text-align: left;
+}
+
+.product {
+    text-decoration: none;
+}
+
+.product-picture {
+    margin-bottom: 18px;
+    padding: 20px;
+    background: #f0efec;
+}
+
+.product-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.product p,
+.jacket-info p {
+    margin: 0 0 6px;
+    font-size: 15px;
+}
+
+.previous-price {
+    color: #77756f;
+    text-decoration: line-through;
+}
+
+.about {
+    padding: 90px 8%;
+    background: #e9e7e1;
+    text-align: center;
+}
+
+.about > h2 {
+    margin: 0 0 55px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.reasons {
+    display: flex;
+    gap: 50px;
+    text-align: left;
+}
+
+.reason {
+    flex: 1;
+}
+
+.reason .number {
+    margin-bottom: 14px;
+}
+
+.reason h3 {
+    margin: 0 0 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.reason p {
+    font-size: 16px;
+}
+
+.jacket {
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.jacket-picture {
+    width: 48%;
+    padding: 25px;
+    background: #eeece7;
+    text-align: center;
+}
+
+.jacket-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sale {
+    margin: 12px 0 0;
+}
+
+.jacket-info {
+    width: 38%;
+}
+
+.jacket-info .small-heading {
+    color: #66635e;
+    font-size: 14px;
+}
+
+.jacket-info h2 {
+    margin: 12px 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.plain-link {
+    margin-top: 24px;
+    display: block;
+    font-size: 17px;
+}
+
+.signup {
+    padding: 90px 20px;
+    background: #e9e7e1;
+    text-align: center;
+}
+
+.signup h2 {
+    margin: 0 0 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.signup > p {
+    font-size: 17px;
+}
+
+.signup-note {
+    margin-top: 32px;
+}
+
+.signup-form {
+    max-width: 620px;
+    margin: 18px auto 0;
+    display: flex;
+    gap: 12px;
+}
+
+.signup-form input {
+    min-width: 0;
+    padding: 14px;
+    flex: 1;
+    border: 1px solid #77756f;
+    background: transparent;
+    font-size: 16px;
+}
+
+.signup-form .button {
+    min-width: 170px;
+    padding: 14px;
+    font-size: 16px;
+}
+
+.site-footer {
+    padding: 70px 6% 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.footer-part h2 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-part p,
+.footer-part a {
+    margin: 0 0 12px;
+    display: block;
+    font-size: 15px;
+}
+
+.footer-part a {
+    text-decoration: none;
+}
+
+.copyright {
+    grid-column: 1 / 5;
+    margin: 30px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #d5d3cd;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .header {
+        height: auto;
+        min-height: 58px;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .main-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .hero p {
+        font-size: 23px;
+    }
+
+    .category-cards {
+        flex-direction: column;
+    }
+
+    .category img {
+        max-height: 450px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reasons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .jacket {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .jacket-picture,
+    .jacket-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .header-links {
+        gap: 18px;
+    }
+
+    .main-links {
+        gap: 17px;
+    }
+
+    .main-links a {
+        font-size: 13px;
+    }
+
+    .shipping-bar p {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 35px 22px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .button {
+        min-width: 200px;
+        font-size: 17px;
+    }
+
+    .categories {
+        padding: 60px 18px;
+    }
+
+    .product-list {
+        gap: 16px;
+    }
+
+    .product-picture {
+        padding: 10px;
+    }
+
+    .product h3 {
+        font-size: 15px;
+    }
+
+    .product p {
+        font-size: 13px;
+    }
+
+    .products {
+        padding: 30px 18px 70px;
+    }
+
+    .about {
+        padding: 65px 25px;
+    }
+
+    .about > h2,
+    .signup h2 {
+        font-size: 40px;
+    }
+
+    .jacket {
+        padding: 60px 22px;
+    }
+
+    .jacket-info h2 {
+        font-size: 42px;
+    }
+
+    .signup-form {
+        flex-direction: column;
+    }
+
+    .signup-form .button {
+        width: 100%;
+    }
+
+    .site-footer {
+        padding: 50px 22px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 20px;
+    }
+
+    .copyright {
+        grid-column: 1 / 3;
+    }
+}
