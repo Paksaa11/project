@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us | Koda Wild</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
                     </div>
                 </div>
                 <a href="about.html" class="current">About us</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
             <div class="header-links">
                 <a href="#" class="account" aria-label="Account">
@@ -40,62 +41,41 @@
         </div>
     </header>
     <main>
-        <div class="page-banner banner-about">
-            <div class="glass">
-                <h1>About us</h1>
-                <p>Reliable, technical equipment for people who love the edge of the map.</p>
-            </div>
+
+        <div class="about-hero">
+            <h1>Inspired by the Outdoors</h1>
         </div>
 
-        <section class="discovery">
-            <div class="discovery-picture">
-                <img src="https://static.wixstatic.com/media/c837a6_0443de70d67047d5b56cd2b25c6f4b0a~mv2.jpg/v1/fill/w_980,h_1128,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/spirit-of-discovery.jpg" alt="Hiker standing on a mountain ridge">
-            </div>
-            <div class="discovery-copy">
-                <h2>The spirit of discovery</h2>
-                <p>We believe that true growth happens at the edge of your comfort zone. Our mission is to provide the reliable, technical equipment you need to step outside, face the elements, and return with unforgettable stories.</p>
-                <a href="shop.html" class="button black-button">Shop all products</a>
+        <section class="about-intro">
+            <p>KodaWild was born out of a desire for more reliable, lightweight gear that doesn't compromise on durability. What started as hand-modified equipment in a small mountain garage has evolved into a global brand trusted by modern explorers.</p>
+        </section>
+
+        <section class="peaks">
+            <h2>Chasing higher peaks</h2>
+            <div class="peaks-gallery">
+                <img src="https://static.wixstatic.com/media/c837a6_fe1d709edde24968a61504b16bb50781~mv2.jpg/v1/fill/w_980,h_1372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%2066.jpg" alt="Hiker climbing a mountain trail">
+                <img src="https://static.wixstatic.com/media/c837a6_54daa587209d42deb294b15c2e24d7be~mv2.jpg/v1/fill/w_980,h_1372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%2067.jpg" alt="Camper beside a tent at sunrise">
+                <img src="https://static.wixstatic.com/media/c837a6_83a6cb2f937d43dca43cb6411e6b3436~mv2.jpg/v1/fill/w_980,h_1372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%2065.jpg" alt="Climber on a rocky summit">
+                <img src="https://static.wixstatic.com/media/c837a6_85970da997fe4fa5adad6171e198dae5~mv2.jpg/v1/fill/w_980,h_1372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%2063.jpg" alt="Trail through a mountain valley">
             </div>
         </section>
 
-        <section class="wild">
-            <h2>Built For The Wild</h2>
-            <div class="reasons">
-                <div class="reason glass">
-                    <img src="https://static.wixstatic.com/media/nsplsh_171f536f4637475ea093b7c0cc621c80~mv2.jpg/v1/crop/x_643,y_1219,w_2908,h_2918/fill/w_980,h_983,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/guarantee.jpg" alt="Mountain landscape">
-                    <p class="number">01</p>
-                    <h3>Lifetime Guarantee</h3>
-                    <p>Our gear is crafted to endure the harshest backcountry conditions.</p>
-                </div>
-                <div class="reason glass">
-                    <img src="https://static.wixstatic.com/media/c837a6_165222f4661a46209b4e5ba8787dbb4b~mv2.jpg/v1/crop/x_25,y_0,w_757,h_759/fill/w_757,h_759,al_c,q_85,enc_auto/carbon-neutral.jpg" alt="Forest campsite">
-                    <p class="number">02</p>
-                    <h3>Carbon Neutral</h3>
-                    <p>We offset one hundred percent of our delivery emissions.</p>
-                </div>
-                <div class="reason glass">
-                    <img src="https://static.wixstatic.com/media/c837a6_ca0d24dbb84b49448849577fa6c08a5d~mv2.png/v1/crop/x_54,y_159,w_703,h_705/fill/w_703,h_705,al_c,q_90,enc_auto/expertly-tested.png" alt="Gear being tested outdoors">
-                    <p class="number">03</p>
-                    <h3>Expertly Tested</h3>
-                    <p>Every piece of equipment is proven in extreme real-world environments.</p>
-                </div>
-            </div>
+        <section class="standards">
+            <h2>Uncompromising Material Standards</h2>
+            <p>We partner with leading sustainable textile mills to ensure every thread, buckle, and seam is built for longevity. Our design process focuses on zero-waste construction and rigorous environmental field testing.</p>
         </section>
 
-        <section class="faq" id="faq">
-            <h2>Frequently asked questions</h2>
-            <details>
-                <summary>How long does shipping take?</summary>
-                <p>Most orders leave our warehouse within two business days. Orders over $150 ship free.</p>
-            </details>
-            <details>
-                <summary>What does the lifetime guarantee cover?</summary>
-                <p>It covers defects in materials and workmanship for as long as you own the product.</p>
-            </details>
-            <details>
-                <summary>Can I return an item?</summary>
-                <p>Yes. Unused items can be returned within 30 days for a full refund.</p>
-            </details>
+        <section class="signup">
+            <h2>Join The Expedition</h2>
+            <form class="signup-form">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="Your email address">
+                <label class="check" for="agree">
+                    <input type="checkbox" id="agree">
+                    Yes, subscribe me to your newsletter. *
+                </label>
+                <button type="button" class="button black-button">Subscribe</button>
+            </form>
         </section>
     </main>
 
@@ -115,7 +95,7 @@
         </div>
         <div class="footer-part">
             <h2>Care</h2>
-            <a href="#">Contact</a>
+            <a href="contact.html">Contact</a>
             <a href="about.html#faq">FAQ</a>
             <a href="#">Shipping Policy</a>
             <a href="#">Refund Policy</a>

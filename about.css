@@ -1,0 +1,130 @@
+.about-hero {
+    min-height: 600px;
+    padding: 40px 2% 20px;
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0) 55%), url("https://static.wixstatic.com/media/c837a6_09abe2c5ea0c425eac6ea6dfce31d32d~mv2.jpg/v1/fill/w_1600,h_750,al_c,q_85,enc_auto/hero-about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-hero h1 {
+    max-width: 760px;
+    margin: 0;
+    color: white;
+    font-size: 92px;
+    line-height: 0.95;
+}
+
+.about-intro {
+    padding: 70px 2% 0;
+}
+
+.about-intro p {
+    max-width: 820px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.peaks {
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.peaks h2 {
+    margin: 0 0 50px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.peaks-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.peaks-gallery img {
+    width: 100%;
+    aspect-ratio: 5 / 7;
+    display: block;
+    object-fit: cover;
+}
+
+.standards {
+    padding: 100px 8%;
+    background: #e9e7e1;
+    text-align: center;
+}
+
+.standards h2 {
+    max-width: 800px;
+    margin: 0 auto 24px;
+    font-size: 46px;
+}
+
+.standards p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .about-hero {
+        min-height: 480px;
+    }
+
+    .about-hero h1 {
+        font-size: 64px;
+    }
+
+    .about-intro {
+        padding: 50px 6% 0;
+    }
+
+    .peaks,
+    .standards {
+        padding: 70px 6%;
+    }
+
+    .peaks-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .standards h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-hero {
+        min-height: 400px;
+        padding: 30px 16px 16px;
+    }
+
+    .about-hero h1 {
+        font-size: 44px;
+    }
+
+    .about-intro p {
+        font-size: 17px;
+    }
+
+    .standards p {
+        font-size: 16px;
+    }
+
+    .peaks h2 {
+        font-size: 26px;
+    }
+
+    .peaks-gallery {
+        gap: 12px;
+    }
+
+    .standards h2 {
+        font-size: 30px;
+    }
+}

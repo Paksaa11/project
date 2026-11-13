@@ -1,0 +1,382 @@
+.plain-link:hover,
+.section-heading a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 720px;
+    padding: 60px 6%;
+    display: flex;
+    align-items: center;
+    background-image: url("https://static.wixstatic.com/media/84770f_78773960716545dfa5771597becff52c~mv2.jpg/v1/fill/w_1600,h_985,al_c,q_85,enc_auto/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-copy {
+    max-width: 700px;
+}
+
+.hero h1 {
+    margin: 0 0 18px;
+    font-size: 72px;
+}
+
+.hero p {
+    margin: 0 0 34px;
+    font-size: 24px;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.products .section-heading h2 {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 44px;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.section-heading a {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.categories {
+    padding: 90px 5%;
+}
+
+.category-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.category {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.category-picture {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #e9e7e1;
+}
+
+.category-picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.category h3 {
+    margin: 20px 0 8px;
+    font-size: 28px;
+}
+
+.category p {
+    margin: 0;
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.products {
+    padding: 40px 5% 100px;
+    text-align: center;
+}
+
+.wild {
+    padding: 100px 6%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://static.wixstatic.com/media/c837a6_ba72c85880b442c79eeeb39521b53a50~mv2.png/v1/fill/w_1600,h_1200,al_c,q_90,enc_auto/wild.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.wild > h2 {
+    margin: 0 0 55px;
+    font-size: 52px;
+}
+
+.reasons {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
+
+.reason {
+    padding: 22px;
+    flex: 1;
+    min-width: 0;
+}
+
+.reason img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 20px;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.reason .number {
+    margin: 0 0 8px;
+    font-size: 15px;
+}
+
+.reason h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.reason p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.deal {
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.deal-info {
+    flex: 1;
+}
+
+.deal-info h2 {
+    margin: 0 0 14px;
+    font-size: 52px;
+}
+
+.deal-info > p {
+    margin: 0 0 30px;
+    font-size: 19px;
+}
+
+.discounts {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.discount {
+    padding: 22px;
+    flex: 1;
+    background: #e9e7e1;
+}
+
+.discount h3 {
+    margin: 0 0 4px;
+    font-size: 40px;
+}
+
+.discount p {
+    margin: 0;
+}
+
+.plain-link {
+    font-size: 17px;
+}
+
+.deal-product {
+    width: 38%;
+}
+
+.deal-product .product-picture {
+    padding: 0;
+}
+
+.discovery {
+    padding: 0 8% 100px;
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+
+.discovery-picture {
+    width: 45%;
+}
+
+.discovery-picture img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    display: block;
+    object-fit: cover;
+}
+
+.discovery-copy {
+    flex: 1;
+}
+
+.discovery-copy h2 {
+    margin: 0 0 22px;
+    font-size: 46px;
+}
+
+.discovery-copy p {
+    margin: 0 0 32px;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .reasons {
+        flex-direction: column;
+    }
+
+    .reason {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .reason img {
+        width: 38%;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .categories {
+        padding: 70px 5%;
+    }
+
+    .category-cards {
+        flex-direction: column;
+    }
+
+    .category-picture {
+        aspect-ratio: 4 / 3;
+    }
+
+    .wild,
+    .deal {
+        padding: 70px 6%;
+    }
+
+    .wild > h2,
+    .deal-info h2 {
+        font-size: 40px;
+    }
+
+    .deal {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .deal-info,
+    .deal-product {
+        width: 100%;
+    }
+
+    .discovery {
+        padding: 0 6% 70px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .discovery-picture {
+        width: 100%;
+    }
+
+    .discovery-picture img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .discovery-copy h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        min-height: 560px;
+        padding: 35px 16px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        margin-bottom: 26px;
+        font-size: 17px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .products .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .products {
+        padding: 30px 18px 70px;
+    }
+
+    .wild > h2,
+    .deal-info h2 {
+        font-size: 32px;
+    }
+
+    .reason {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px;
+    }
+
+    .reason img {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .discounts {
+        flex-direction: column;
+    }
+
+    .discovery-copy h2 {
+        font-size: 32px;
+    }
+
+    .discovery-copy p {
+        font-size: 17px;
+    }
+}
