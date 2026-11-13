@@ -295,10 +295,17 @@ h3 {
 }
 
 .signup-form input[type="email"] {
+    width: 100%;
     padding: 14px;
     border: 1px solid #77756f;
     background: transparent;
     font-size: 16px;
+}
+
+.signup-form input[type="email"]:focus-visible,
+.signup-form .button:focus-visible {
+    outline: 2px solid #171715;
+    outline-offset: 3px;
 }
 
 .check {
@@ -311,6 +318,10 @@ h3 {
 .signup-form .button {
     margin-top: 10px;
     width: 100%;
+}
+
+.signup-form input[type="submit"] {
+    appearance: none;
 }
 
 .site-footer {

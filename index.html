@@ -189,12 +189,12 @@
             <h2>Join The Expedition</h2>
             <form class="signup-form">
                 <label for="email">Email *</label>
-                <input type="email" id="email" placeholder="Your email address">
+                <input type="email" id="email" placeholder="Your email address" required>
                 <label class="check" for="agree">
                     <input type="checkbox" id="agree">
                     Yes, subscribe me to your newsletter. *
                 </label>
-                <button type="button" class="button black-button">Subscribe</button>
+                <input type="submit" class="button black-button" value="Subscribe">
             </form>
         </section>
     </main>
@@ -228,5 +228,10 @@
         </div>
         <p class="copyright">&copy; 2026 by Koda Wild</p>
     </footer>
+    <script>
+        document.querySelector(".signup-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>
