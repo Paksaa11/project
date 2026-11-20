@@ -18,18 +18,24 @@
             <nav class="main-links">
                 <div class="dropdown">
                     <a href="shop.html">Shop all &#9662;</a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">Camping Essentials</a>
+                        <a href="shop.html">Sleep Systems</a>
+                        <a href="shop.html">Personal Gear</a>
+                        <a href="shop.html">Accessories</a>
+                    </div>
                 </div>
                 <a href="about.html">About us</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <div class="header-links">
-                <a href="#" class="account" aria-label="Account">
+                <a href="login.html" class="account" aria-label="Account">
                     <div class="account-head"></div>
                     <div class="account-body"></div>
                 </a>
-                <a href="#" class="bag" aria-label="Shopping bag">
+                <a href="cart.html" class="bag" aria-label="Shopping bag">
                     <div class="bag-handle"></div>
-                    <div class="bag-shape">0</div>
+                    <div class="bag-shape">2</div>
                 </a>
             </div>
         </div>
@@ -80,7 +86,7 @@
                     </a>
                     <h3>Trekking Sneakers</h3>
                     <p>Price $259.00</p>
-                    <a href="#" class="add-button">Add to cart</a>
+                    <a href="cart.html" class="add-button">Add to cart</a>
                 </div>
                 <div class="product">
                     <a href="#" class="product-picture">
@@ -89,7 +95,7 @@
                     </a>
                     <h3>Stainless Steel Thermos</h3>
                     <p>Price $29.00</p>
-                    <a href="#" class="add-button">Add to cart</a>
+                    <a href="cart.html" class="add-button">Add to cart</a>
                 </div>
                 <div class="product">
                     <a href="#" class="product-picture">
@@ -98,7 +104,7 @@
                     </a>
                     <h3>2-Person Tent</h3>
                     <p>Price $1,459.00</p>
-                    <a href="#" class="add-button">Add to cart</a>
+                    <a href="cart.html" class="add-button">Add to cart</a>
                 </div>
                 <div class="product">
                     <a href="#" class="product-picture">
@@ -108,7 +114,7 @@
                     <h3>Polarized Outdoor Sunglasses</h3>
                     <p class="previous-price">Regular Price $200.00</p>
                     <p>Sale Price $129.00</p>
-                    <a href="#" class="add-button">Add to cart</a>
+                    <a href="cart.html" class="add-button">Add to cart</a>
                 </div>
             </div>
             <a href="shop.html" class="button black-button">Shop all products</a>
@@ -163,7 +169,7 @@
                     <h3>Membrane Jacket</h3>
                     <p class="previous-price">Regular Price $760.00</p>
                     <p>Sale Price $608.00</p>
-                    <a href="#" class="add-button">Add to cart</a>
+                    <a href="cart.html" class="add-button">Add to cart</a>
                 </div>
             </div>
         </section>
@@ -183,12 +189,12 @@
             <h2>Join The Expedition</h2>
             <form class="signup-form">
                 <label for="email">Email *</label>
-                <input type="email" id="email" placeholder="Your email address" required>
+                <input type="email" id="email" placeholder="Your email address">
                 <label class="check" for="agree">
                     <input type="checkbox" id="agree">
                     Yes, subscribe me to your newsletter. *
                 </label>
-                <input type="submit" class="button black-button" value="Subscribe">
+                <button type="button" class="button black-button">Subscribe</button>
             </form>
         </section>
     </main>
@@ -222,10 +228,5 @@
         </div>
         <p class="copyright">&copy; 2026 by Koda Wild</p>
     </footer>
-    <script>
-        document.querySelector(".signup-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-        });
-    </script>
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Koda Wild</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header>
+        <div class="shipping-bar">
+            <p>Free shipping on orders over $150</p>
+        </div>
+
+        <div class="header">
+            <a href="index.html" class="logo">koda wild</a>
+            <nav class="main-links">
+                <div class="dropdown">
+                    <a href="shop.html">Shop all &#9662;</a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">Camping Essentials</a>
+                        <a href="shop.html">Sleep Systems</a>
+                        <a href="shop.html">Personal Gear</a>
+                        <a href="shop.html">Accessories</a>
+                    </div>
+                </div>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-links">
+                <a href="login.html" class="account" aria-label="Account">
+                    <div class="account-head"></div>
+                    <div class="account-body"></div>
+                </a>
+                <a href="cart.html" class="bag" aria-label="Shopping bag">
+                    <div class="bag-handle"></div>
+                    <div class="bag-shape">2</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="auth">
+            <div class="auth-card">
+                <h1>Create account</h1>
+                <p>Join the expedition and keep track of your orders.</p>
+                <form class="auth-form" action="register.html">
+                    <div class="name-row">
+                        <div class="field">
+                            <label for="first-name">First name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="field">
+                            <label for="last-name">Last name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="register-email">Email *</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="register-password">Password *</label>
+                        <input type="password" id="register-password" name="password" minlength="8" required>
+                    </div>
+                    <div class="field">
+                        <label for="confirm-password">Confirm password *</label>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+                    </div>
+                    <label class="check" for="terms">
+                        <input type="checkbox" id="terms" required>
+                        I agree to the Terms &amp; Conditions. *
+                    </label>
+                    <button type="submit" class="button black-button">Create account</button>
+                </form>
+                <div class="auth-links">
+                    <p>Already have an account? <a href="login.html">Log in</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-part">
+            <h2>Contact</h2>
+            <p>500 Terry Francine Street,<br>San Francisco, CA 94158</p>
+            <p>123-456-7890</p>
+            <p>info@mysite.com</p>
+        </div>
+        <div class="footer-part">
+            <h2>Shop</h2>
+            <a href="shop.html">Camping Essentials</a>
+            <a href="shop.html">Sleep Systems</a>
+            <a href="shop.html">Personal Gear</a>
+            <a href="shop.html">Accessories</a>
+        </div>
+        <div class="footer-part">
+            <h2>Care</h2>
+            <a href="contact.html">Contact</a>
+            <a href="about.html#faq">FAQ</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="footer-part">
+            <h2>Information</h2>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility Statement</a>
+        </div>
+        <p class="copyright">&copy; 2026 by Koda Wild</p>
+    </footer>
+</body>
+</html>
